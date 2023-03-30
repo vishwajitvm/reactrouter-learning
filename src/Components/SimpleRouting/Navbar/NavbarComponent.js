@@ -6,6 +6,7 @@ import LinksComponent from './LinksComponent'
 import HomeMain from '../../HomeMain'
 import Page404 from '../../Page404'
 import UsersComponent from '../UsersDynamic/UsersComponent'
+import SearchParamComponent from '../SearchparamInRoutes/SearchParamComponent'
 
 export default function NavbarComponent() {
   return (
@@ -17,6 +18,8 @@ export default function NavbarComponent() {
             <Route path="/simpleroute/home" element={<Home/>} />
             <Route path="/simpleroute/about" element={<About/>} />
             <Route path="/simpleroute/users/:name" element={<UsersComponent/>} />
+            <Route path="/simpleroute/filter" element={<SearchParamComponent/>} />
+
             <Route path="/*" element={<Page404/>} />
         </Routes>
       </BrowserRouter>

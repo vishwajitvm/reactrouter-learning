@@ -12,6 +12,7 @@ export default function HomeMain() {
             <li>404 page</li>
             <li>Dynamic Routing </li>
             <li>Navbar styling</li>
+            <li>SearchParams and setSearchParmas</li>
       </h2>
     </div>
   )
