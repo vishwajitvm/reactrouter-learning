@@ -10,6 +10,8 @@ export default function HomeMain() {
 
             <span>Day 2</span>
             <li>404 page</li>
+            <li>Dynamic Routing </li>
+            <li>Navbar styling</li>
       </h2>
     </div>
   )

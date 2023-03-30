@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.navlinks {
+  background-color: gray;
+  padding: 15px 0px;
+  color: white;
+}
+
+.navlinks ul li{
+  display: inline-block;
+  padding: 10px 28px;
+  background-color: blueviolet;
+  margin: 0px 10px;
+}
+
+
+.navlinks a{
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+
+}
