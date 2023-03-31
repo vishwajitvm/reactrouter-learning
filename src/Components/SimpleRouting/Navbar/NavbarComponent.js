@@ -7,6 +7,10 @@ import HomeMain from '../../HomeMain'
 import Page404 from '../../Page404'
 import UsersComponent from '../UsersDynamic/UsersComponent'
 import SearchParamComponent from '../SearchparamInRoutes/SearchParamComponent'
+import Contact from '../Contact'
+import Company from '../ContactSubPages/Company'
+import Channel from '../ContactSubPages/Channel'
+import Other from '../ContactSubPages/Other'
 
 export default function NavbarComponent() {
   return (
@@ -19,6 +23,13 @@ export default function NavbarComponent() {
             <Route path="/simpleroute/about" element={<About/>} />
             <Route path="/simpleroute/users/:name" element={<UsersComponent/>} />
             <Route path="/simpleroute/filter" element={<SearchParamComponent/>} />
+            {/* Nested Routes in Contact Page */}
+            <Route path="/simpleroute/contact/" element={<Contact/>} >
+              <Route path="company" element={<Company/>} />
+              <Route path="channel" element={<Channel/>} />
+              <Route path="other" element={<Other/>} />
+            </Route>
+            {/* Nested Route End */}
 
             <Route path="/*" element={<Page404/>} />
         </Routes>
